@@ -67,8 +67,7 @@ export default function DrawingBoard({ user, boardId, onLogout }) {
     window.addEventListener("resize", resizeCanvas);
 
     // Initialize Socket.IO connection to the standalone server
-    const SOCKET_SERVER_URL =
-      process.env.NEXT_PUBLIC_SOCKET_SERVER_URL || "http://localhost:8000";
+    const SOCKET_SERVER_URL =  "https://api-boardcast.basatmaqsood.com/";
     const socket = io(SOCKET_SERVER_URL, {
       withCredentials: true,
       transports: ["websocket"], // Force WebSocket transport
