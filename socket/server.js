@@ -132,7 +132,7 @@ app.get("/health", (req, res) => {
 })
 
 // Start the server
-const PORT = process.env.PORT || 8000
+const PORT = process.env.PORT || 8001
 server.listen(PORT, () => {
     console.log(`Socket.IO server running on port ${PORT}`)
 })
